@@ -12,3 +12,7 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send('Product Resale Server Running');
 })
+
+app.listen(port, ()=>{
+    console.log(`Product Resale server running on port ${port}`);
+})
